@@ -16,7 +16,7 @@
 			, UPD_DTTM
 			, REG_DTTM
 		)
-		SELECT
+		SELECT     /*+ INDEX(emp emp_idx) */
 			SBSC_MGMT_ID
 			, PLFM_PROD_ID
 			, ATTR_SEQ
